@@ -7,7 +7,7 @@ const app = express();
 const port = 3000;
 
 // MongoDB connection setup
-mongoose.connect('mongodb://localhost:27017/foodOrderDB', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://db:27017/foodOrderDB', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error('MongoDB connection error:', err));
 
