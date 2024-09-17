@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = 3067;
 
 // MongoDB connection setup
 mongoose.connect('mongodb://db:27017/foodOrderDB', { useNewUrlParser: true, useUnifiedTopology: true })
