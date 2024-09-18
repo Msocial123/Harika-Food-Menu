@@ -4,9 +4,9 @@ metadata:
   name: foodmenu
 spec:
   selector:
-    app: myapp
+    app: foodmenu
   ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 3067
+    - protocol: TCP
+      port: 80          # Exposing port 80 externally
+      targetPort: 3067   # Targeting the container's internal port 3067
   type: LoadBalancer
